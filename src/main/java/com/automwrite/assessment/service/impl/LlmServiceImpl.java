@@ -61,7 +61,6 @@ public class LlmServiceImpl implements LlmService {
                     return (String) content.get(0).get("text");
                 }
             }
-
             log.error("Unexpected response format: {}", response);
             return "";
         } catch (Exception e) {
